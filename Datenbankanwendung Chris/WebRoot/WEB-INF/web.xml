@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+  "http://java.sun.com/dtd/web-app_2.3.dtd">
+
+<web-app>
+
+  <!-- =========================================================== -->
+  <!-- Define a servlet name and associate a classfile             -->
+  <!-- =========================================================== -->
+
+  <!-- =============== -->
+  <!-- Welcome Section -->
+  <!-- =============== -->
+
+  <servlet>
+    <servlet-name>MainPage</servlet-name>
+    <servlet-class>flexvz.welcome.MainPage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>flexvz.welcome.Logout</servlet-class>
+  </servlet>
+  
+  <!-- ====================== -->
+  <!-- Student Option Section -->
+  <!-- ====================== -->  
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldung</servlet-name>
+    <servlet-class>flexvz.student.Pruefungsanmeldung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsabmeldung</servlet-name>
+    <servlet-class>flexvz.student.Pruefungsabmeldung</servlet-class>
+  </servlet>  
+  
+   <servlet>
+    <servlet-name>Veranstaltungsanmeldung</servlet-name>
+    <servlet-class>flexvz.student.Veranstaltungsanmeldung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsabmeldung</servlet-name>
+    <servlet-class>flexvz.student.Veranstaltungsabmeldung</servlet-class>
+  </servlet>  
+  
+  <!-- ====================== -->
+  <!-- Student Result Section -->
+  <!-- ====================== --> 
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldung_result</servlet-name>
+    <servlet-class>flexvz.student.Pruefungsanmeldung_result</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Pruefungsabmeldung_result</servlet-name>
+    <servlet-class>flexvz.student.Pruefungsabmeldung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsanmeldung_result</servlet-name>
+    <servlet-class>flexvz.student.Veranstaltungsanmeldung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsabmeldung_result</servlet-name>
+    <servlet-class>flexvz.student.Veranstaltungsabmeldung_result</servlet-class>
+  </servlet>
+
+  <!-- ===================== -->
+  <!-- Dozent Option Section -->
+  <!-- ===================== -->
+  
+  <servlet>
+    <servlet-name>Veranstaltungserstellung</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungserstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsaenderung</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungsaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsloeschung</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungsloeschung</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>Terminerstellung</servlet-name>
+    <servlet-class>flexvz.dozent.Terminerstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Terminaenderung</servlet-name>
+    <servlet-class>flexvz.dozent.Terminaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Terminloeschung</servlet-name>
+    <servlet-class>flexvz.dozent.Terminloeschung</servlet-class>
+  </servlet>  
+  
+  <servlet>
+    <servlet-name>Veranstaltungseinsicht</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungseinsicht</servlet-class>
+  </servlet> 
+  
+  <!-- ===================== -->
+  <!-- Dozent Result Section -->
+  <!-- ===================== -->
+
+  <servlet>
+    <servlet-name>Veranstaltungserstellung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungserstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsaenderung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungsaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungsloeschung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungsloeschung_result</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>Terminerstellung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Terminerstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Terminaenderung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Terminaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Terminloeschung_result</servlet-name>
+    <servlet-class>flexvz.dozent.Terminloeschung_result</servlet-class>
+  </servlet>  
+  
+  <servlet>
+    <servlet-name>Veranstaltungseinsicht_result</servlet-name>
+    <servlet-class>flexvz.dozent.Veranstaltungseinsicht_result</servlet-class>
+  </servlet>
+
+  <!-- ==================== -->
+  <!-- Admin Option Section -->
+  <!-- ==================== -->
+  
+  <servlet>
+    <servlet-name>Pruefungserstellung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungserstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsaenderung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsloeschung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungserstellung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungserstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungsaenderung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungsaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungsloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungsloeschung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulerstellung</servlet-name>
+    <servlet-class>flexvz.admin.Modulerstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulaenderung</servlet-name>
+    <servlet-class>flexvz.admin.Modulaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Modulloeschung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzepterstellung</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzepterstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzeptaenderung</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzeptaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzeptloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzeptloeschung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Usererstellung</servlet-name>
+    <servlet-class>flexvz.admin.Usererstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Useraenderung</servlet-name>
+    <servlet-class>flexvz.admin.Useraenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Userloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Userloeschung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangerstellung</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangerstellung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangaenderung</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangaenderung</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangloeschung</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangloeschung</servlet-class>
+  </servlet>
+  
+  <!-- ==================== -->
+  <!-- Admin Result Section -->
+  <!-- ==================== -->
+
+  <servlet>
+    <servlet-name>Pruefungserstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungserstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsaenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsaenderung_result</servlet-class>
+  </servlet>  
+  
+  <servlet>
+    <servlet-name>Pruefungsloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsloeschung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungserstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungserstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungsaenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungsaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Pruefungsanmeldungsloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Pruefungsanmeldungsloeschung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulerstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Modulerstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulaenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Modulaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Modulloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Modulloeschung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzepterstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzepterstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzeptaenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzeptaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Veranstaltungskonzeptloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Veranstaltungskonzeptloeschung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Usererstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Usererstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Useraenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Useraenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Userloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Userloeschung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangerstellung_result</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangerstellung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangaenderung_result</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangaenderung_result</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Studiengangloeschung_result</servlet-name>
+    <servlet-class>flexvz.admin.Studiengangloeschung_result</servlet-class>
+  </servlet>  
+  
+  <!-- =========================================================== -->
+  <!-- define URL patterns that map an http address to a servlet   -->
+  <!-- =========================================================== -->
+
+  <!-- =============== -->
+  <!-- Welcome Section -->
+  <!-- =============== -->
+
+  <servlet-mapping>
+    <servlet-name>MainPage</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout_successful</url-pattern>
+  </servlet-mapping>
+
+  <!-- ====================== -->
+  <!-- Student Option Section -->
+  <!-- ====================== -->
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldung</servlet-name>
+    <url-pattern>/Prüfungsanmeldung</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsabmeldung</servlet-name>
+    <url-pattern>/Prüfungsabmeldung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsanmeldung</servlet-name>
+    <url-pattern>/Veranstaltungsanmeldung</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsabmeldung</servlet-name>
+    <url-pattern>/Veranstaltungsabmeldung</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ====================== -->
+  <!-- Student Result Section -->
+  <!-- ====================== -->
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldung_result</servlet-name>
+    <url-pattern>/Prüfungsanmeldung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsabmeldung_result</servlet-name>
+    <url-pattern>/Prüfungsabmeldung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsanmeldung_result</servlet-name>
+    <url-pattern>/Veranstaltungsanmeldung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsabmeldung_result</servlet-name>
+    <url-pattern>/Veranstaltungsabmeldung/confirmation</url-pattern>
+  </servlet-mapping>
+
+  <!-- ===================== -->
+  <!-- Dozent Option Section -->
+  <!-- ===================== -->
+
+  <servlet-mapping>
+    <servlet-name>Veranstaltungserstellung</servlet-name>
+    <url-pattern>/Veranstaltungserstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsaenderung</servlet-name>
+    <url-pattern>/Veranstaltungsänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsloeschung</servlet-name>
+    <url-pattern>/Veranstaltungslöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminerstellung</servlet-name>
+    <url-pattern>/Terminerstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminaenderung</servlet-name>
+    <url-pattern>/Terminänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminloeschung</servlet-name>
+    <url-pattern>/Terminlöschung</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungseinsicht</servlet-name>
+    <url-pattern>/Veranstaltungseinsicht</url-pattern>
+  </servlet-mapping> 
+
+  <!-- ===================== -->
+  <!-- Dozent Result Section -->
+  <!-- ===================== -->  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungserstellung_result</servlet-name>
+    <url-pattern>/Veranstaltungserstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsaenderung_result</servlet-name>
+    <url-pattern>/Veranstaltungsänderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungsloeschung_result</servlet-name>
+    <url-pattern>/Veranstaltungslöschung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminerstellung_result</servlet-name>
+    <url-pattern>/Terminerstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminaenderung_result</servlet-name>
+    <url-pattern>/Terminänderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Terminloeschung_result</servlet-name>
+    <url-pattern>/Terminlöschung/confirmation</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungseinsicht_result</servlet-name>
+    <url-pattern>/Veranstaltungseinsicht/confirmation</url-pattern>
+  </servlet-mapping> 
+
+  <!-- ==================== -->
+  <!-- Admin Option Section -->
+  <!-- ==================== -->
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungserstellung</servlet-name>
+    <url-pattern>/Prüfungserstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsaenderung</servlet-name>
+    <url-pattern>/Prüfungsänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsloeschung</servlet-name>
+    <url-pattern>/Prüfungslöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungserstellung</servlet-name>
+    <url-pattern>/Prüfungsanmeldungserstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungsaenderung</servlet-name>
+    <url-pattern>/Prüfungsanmeldungsänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungsloeschung</servlet-name>
+    <url-pattern>/Prüfungsanmeldungslöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulerstellung</servlet-name>
+    <url-pattern>/Modulerstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulaenderung</servlet-name>
+    <url-pattern>/Moduländerung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulloeschung</servlet-name>
+    <url-pattern>/Modullöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzepterstellung</servlet-name>
+    <url-pattern>/Veranstaltungskonzepterstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzeptaenderung</servlet-name>
+    <url-pattern>/Veranstaltungskonzeptänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzeptloeschung</servlet-name>
+    <url-pattern>/Veranstaltungskonzeptlöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Usererstellung</servlet-name>
+    <url-pattern>/Usererstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Useraenderung</servlet-name>
+    <url-pattern>/Useränderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Userloeschung</servlet-name>
+    <url-pattern>/Userlöschung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangerstellung</servlet-name>
+    <url-pattern>/Studiengangerstellung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangaenderung</servlet-name>
+    <url-pattern>/Studiengangänderung</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangloeschung</servlet-name>
+    <url-pattern>/Studienganglöschung</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ==================== -->
+  <!-- Admin Result Section -->
+  <!-- ==================== -->
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungserstellung_result</servlet-name>
+    <url-pattern>/Prüfungserstellung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsaenderung_result</servlet-name>
+    <url-pattern>/Prüfungsänderung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsloeschung_result</servlet-name>
+    <url-pattern>/Prüfungslöschung/confirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungserstellung_result</servlet-name>
+    <url-pattern>/Prüfungsanmeldungserstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungsaenderung_result</servlet-name>
+    <url-pattern>/Prüfungsanmeldungsänderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Pruefungsanmeldungsloeschung_result</servlet-name>
+    <url-pattern>/Prüfungsanmeldungslöschung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulerstellung_result</servlet-name>
+    <url-pattern>/Modulerstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulaenderung_result</servlet-name>
+    <url-pattern>/Moduländerung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Modulloeschung_result</servlet-name>
+    <url-pattern>/Modullöschung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzepterstellung_result</servlet-name>
+    <url-pattern>/Veranstaltungskonzepterstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzeptaenderung_result</servlet-name>
+    <url-pattern>/Veranstaltungskonzeptänderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Veranstaltungskonzeptloeschung_result</servlet-name>
+    <url-pattern>/Veranstaltungskonzeptlöschung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Usererstellung_result</servlet-name>
+    <url-pattern>/Usererstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Useraenderung_result</servlet-name>
+    <url-pattern>/Useränderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Userloeschung_result</servlet-name>
+    <url-pattern>/Userlöschung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangerstellung_result</servlet-name>
+    <url-pattern>/Studiengangerstellung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangaenderung_result</servlet-name>
+    <url-pattern>/Studiengangänderung/confirmation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>Studiengangloeschung_result</servlet-name>
+    <url-pattern>/Studienganglöschung/confirmation</url-pattern>
+  </servlet-mapping>
+
+  <!-- =========================================================== -->
+  <!-- optionally: define default html page                        -->
+  <!-- =========================================================== -->
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

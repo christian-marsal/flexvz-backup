@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlexVZ</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h2>FlexVZ</h2>
+<p>Bitte melden Sie sich hier mit ihrem FlexVZ-Accountdaten an: </p>
+
+<form action="./main" method="get">
+	<fieldset>
+		Matrikelnummer:<br>
+		<input type="text" name="matrikelnummer" required="required" value="">
+		<br><br>
+        <input type="radio" name="account" id="Student" value="Student" checked="checked"> 
+        <label for="Student">Student</label><br>
+  		<input type="radio" name="account" id="Dozent" value="Dozent">
+        <label for="Dozent">Dozent</label><br>
+  		<input type="radio" name="account" id="Admin" value="Admin">
+        <label for="Admin">Admin</label><br>
+		<br>
+		<input type="submit" value="Anmelden"/>
+	</fieldset>
+</form>
+</body>
+</html>
